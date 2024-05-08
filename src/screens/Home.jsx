@@ -1,6 +1,16 @@
+import Header from "../components/Header.jsx";
+import NavBar from "../components/NavBar.jsx";
+import SocialProof from "../components/SocialProof.jsx";
 
 export default function Home() {
   return (
-    <div className="container text-center">main</div>
+    <>
+      <NavBar />
+      <div className="container text-center">
+        <Header />
+        <SocialProof />
+      </div>
+
+    </>
   )
 }
