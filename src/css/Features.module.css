@@ -1,37 +1,55 @@
 .subheading {
-    font-weight: 600;
-    font-size: 16px;
-    color: #6941C6;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6941c6;
 }
 
 .heading {
-    font-weight: 600;
-    font-size: 36px;
-    color: #101828;
+  font-weight: 600;
+  font-size: 36px;
+  color: #101828;
 }
 
 .supportingText {
-    font-weight: 400;
-    font-size: 20px;
-    color: #475467;
+  font-weight: 400;
+  font-size: 20px;
+  color: #475467;
 }
 
 .icon {
-    height: 48px;
-    width: 48px;
-    background-color: #FFFFFF;
-    border: 1px solid #EAECF0;
-    border-radius: 1px;
+  height: 48px;
+  width: 48px;
+  background-color: #ffffff;
 }
 
 .title {
-    font-weight: 600;
-    font-size: 20px;
-    color: #101828;
+  font-weight: 600;
+  font-size: 20px;
+  color: #101828;
 }
 
 .content {
-    font-weight: 400;
-    font-size: 16px;
-    color: #475467;
+  font-weight: 400;
+  font-size: 16px;
+  color: #475467;
+}
+
+.imgContainer {
+  width: 100%;
+  height: auto;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 400px) {
+  .heading {
+    line-height: 38px;
+  }
+  .supportingText {
+    line-height: 28px;
+  }
 }

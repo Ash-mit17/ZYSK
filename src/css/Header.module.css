@@ -16,6 +16,11 @@
 .headerBox {
   padding-top: 96px;
   align-content: center;
+  width: Fill (1,440px)px;
+  height: Hug (1,032px)px;
+  padding: 96px 0px 0px 0px;
+  gap: 64px;
+  opacity: 0px;
 }
 
 .btn {
@@ -33,6 +38,7 @@
 
 .btn1 {
     padding: 2px 10px 2px 10px;
+    margin: 0 2px;
     width: 102px;
     height: 24px;
     border: 1px solid #E9D7FE;
@@ -45,8 +51,9 @@
 }
 
 .button1 {
-  width: 122px;
-  height: 60px;
+  width: Hug (143px);
+  height: Hug (60px);
+  padding : 16px 28px 16px 28px;
   font-size: 18px;
   margin-right: 20px;
   border: 1px solid black;
@@ -56,8 +63,9 @@
 }
 
 .button2 {
-  width: 122px;
-  height: 60px;
+  width: Hug (143px);
+  height: Hug (60px);
+  padding : 16px 28px 16px 28px;
   font-size: 18px;
   margin-right: 20px;
   border: 1px solid #7f56d9;
@@ -65,4 +73,23 @@
   background-color: #7f56d9;
   font-weight: 600;
   color: #ffffff;
+}
+
+.imgContainer {
+  width: 100%; 
+  height: auto;
+}
+
+.img {
+  width: 100%; 
+  height: auto;
+  object-fit: contain; 
+}
+
+
+@media screen and (max-width: 400px) {
+  .supportingText {
+    width: 343px;
+    height: 150px;
+  }
 }

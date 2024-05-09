@@ -10,8 +10,8 @@ export default function Header() {
                     <div>
                         <p className={styles.headingText}>Beautiful analytics to grow smarter</p>
                     </div>
-                    <div className='d-flex justify-content-center'>
-                        <p className={styles.supportingText}>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+                    <div className='d-flex flex-wrap justify-content-center'>
+                        <span className={styles.supportingText}>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</span>
                     </div>
                 </div>
                 <div>
@@ -22,7 +22,9 @@ export default function Header() {
                 </div>
             </div>
             <div style={{ margin: '32px 0', border: '8px solid black', borderRadius: '12px' }}>
-                <img height={810} width={1216} src="/screenmockup.png"></img>
+                <div className={styles.imgContainer}>
+                    <img className={styles.img} alt='banner' src="/screenmockup.png" />
+                </div>
             </div>
         </div>
     )

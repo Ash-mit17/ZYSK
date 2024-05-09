@@ -1,0 +1,18 @@
+.box {
+    background-color: #F9FAFB;
+    margin: 20px 0;
+}
+
+
+.button {
+    width: 134px;
+    height: 48px;
+    font-size: 16px;
+    margin-right: 20px;
+    border: 1px solid #7f56d9;
+    border-radius: 8px;
+    background-color: #7f56d9;
+    font-weight: 600;
+    color: #ffffff;
+  }
+

@@ -27,11 +27,11 @@ export default function SocialProof() {
     }
   ]
   return (
-    <div className="container" style={{height: '296px', padding: '32px 0', gap: '32px'}}>
+    <div style={{height: '296px'}}>
       <div className='py-5 fw-bold'>
         Join 4,000+ companies already growing
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex flex-wrap justify-content-center">
         {icons.map((icon, index) => (
           (
             <div className={styles.box} key={index}>
@@ -41,6 +41,7 @@ export default function SocialProof() {
           )
         ))}
       </div>
+      <hr />
     </div>
   )
 }

@@ -1,0 +1,12 @@
+.quote {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 400px) {
+  .quote {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
