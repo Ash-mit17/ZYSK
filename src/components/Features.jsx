@@ -41,7 +41,7 @@ export default function Features() {
         </div>
         <div className='d-flex flex-wrap justify-content-between'>
             {features.map((feature) => (
-                <div style={{width: '384px', margin: '0 10px'}} key={feature}>
+                <div style={{width: '384px', margin: '0 10px'}} key={feature.content}>
                     <img alt='icon' height={48} width={48} className={styles.icon} src={feature.image} />
                     <p className={styles.title}>{feature.title}</p>
                     <p className={styles.content}>{feature.content}</p>

@@ -1,0 +1,22 @@
+.accordion {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .accordiontitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .accordiontitle,
+  .accordioncontent {
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    .accordion {
+        width: 90%;
+      }
+  }

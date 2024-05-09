@@ -1,7 +1,7 @@
 .quote {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  color: #101828;
 }
 
 @media screen and (max-width: 400px) {

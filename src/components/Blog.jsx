@@ -1,4 +1,3 @@
-import styles1 from '../css/FAQ.module.css'
 import styles from '../css/Blog.module.css'
 export default function Blog() {
     const blog = [
@@ -31,13 +30,13 @@ export default function Blog() {
         }
     ]
     return (
-        <div className="container text-start">
+        <div className="container text-start mb-3">
             <div>
                 <div className="d-flex justify-content-between">
                     <p className={styles.txt}>Our Blog</p>
-                    <button className={styles1.button}>View all posts</button>
+                    <button className={styles.button}>View all posts</button>
                 </div>
-                <p>
+                <p className='fs-2 fw-bold'>
                     Lastest blog posts
                 </p>
                 <p>
@@ -47,16 +46,19 @@ export default function Blog() {
             <div className={styles.card}>
                 {blog.map((item, index) => (
                     <div key={index}>
-                        <img src={item.img} alt='blog' />
-                        <p>{item.type}</p>
-                        <p>{item.title}</p>
+                        <div className={styles.imgContainer}>
+                            <img className={styles.img} src={item.img} alt='blog' />
+                        </div>
+
+                        <p className={styles.txt}>{item.type}</p>
+                        <p className='fw-bold'>{item.title}</p>
                         <p>{item.content}</p>
                         <div className='d-flex justify-content-start'>
-                            <div className='d-inline'>
+                            <div className='d-inline my-1'>
                                 <img src={item.avatar} alt='avatar' />
                             </div>
-                            <div className='d-inline'>
-                                <p>{item.name}</p>
+                            <div className='d-inline mx-2'>
+                                <span>{item.name}</span>
                                 <p>{item.date}</p>
                             </div>
                         </div>

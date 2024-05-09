@@ -5,7 +5,7 @@ export default function Header() {
             <div>
                 <div>
                     <div>
-                        <badge className={styles.btn}><badge className={styles.btn1}>New feature</badge>Checkout the team dashboard<img className='pb-1' height={16} width={16} src='/arrow-right.png' /></badge>
+                        <span className={styles.btn}><span className={styles.btn1}>New feature</span>Checkout the team dashboard<img className='pb-1' height={16} width={16} src='/arrow-right.png' /></span>
                     </div>
                     <div>
                         <p className={styles.headingText}>Beautiful analytics to grow smarter</p>

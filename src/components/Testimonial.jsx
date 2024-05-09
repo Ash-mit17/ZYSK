@@ -1,7 +1,7 @@
 import styles from '../css/Testimonial.module.css'
 export default function Testimonial() {
   return (
-    <div className="container mb-5">
+    <div style={{backgroundColor : '#F9FAFB'}} className="container my-5 py-4">
         <div className="text-center">
             <img src="/sisyphus.png" />
         </div>

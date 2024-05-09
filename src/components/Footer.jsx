@@ -2,41 +2,23 @@
 export default function Footer() {
     const items = [
         {
-            'title' : 'Company',
-            't1' : 'q',
-            't2' : 'w',
-            't3' : 'e',
+            'title' : 'Product',
+            't1' : 'Overview',
+            't2' : 'Features',
+            't3' : 'Solutions',
         },
         {
             'title' : 'Company',
-            't1' : 'q',
-            't2' : 'w',
-            't3' : 'e',
+            't1' : 'About us',
+            't2' : 'Carrers',
+            't3' : 'Contact',
         },
         {
-            'title' : 'Company',
-            't1' : 'q',
-            't2' : 'w',
-            't3' : 'e',
+            'title' : 'Resources',
+            't1' : 'Blog',
+            't2' : 'Newsletters',
+            't3' : 'Events',
         },
-        {
-            'title' : 'Company',
-            't1' : 'q',
-            't2' : 'w',
-            't3' : 'e',
-        },
-        {
-            'title' : 'Company',
-            't1' : 'q',
-            't2' : 'w',
-            't3' : 'e',
-        },
-        {
-            'title' : 'Company',
-            't1' : 'q',
-            't2' : 'w',
-            't3' : 'e',
-        }
     ]
   return (
     <div className='container'>
@@ -44,18 +26,18 @@ export default function Footer() {
             <div className="d-flex justify-content-between">
                 {items.map((item) => (
                     <div className="mx-2" key={item.title}>
-                        <p>{item.title}</p>
-                        <p>{item.t1}</p>
-                        <p>{item.t2}</p>
-                        <p>{item.t3}</p>
+                        <p style={{color : '#667085'}}>{item.title}</p>
+                        <p style={{fontWeight : '600'}}>{item.t1}</p>
+                        <p style={{fontWeight : '600'}}>{item.t2}</p>
+                        <p style={{fontWeight : '600'}}>{item.t3}</p>
                     </div>
                 ))}
             </div>
             <hr />
-            <div className="d-flex my-3 justify-content-between">
+            <div className="d-flex flex-wrap my-3 justify-content-between">
                 <div>
-                    <img className='p-1 h-32 w-32' src="/icon.png" />
-                    <span>Untitled Ui</span>
+                    <img alt="icon" className='p-1 h-32 w-32' src="/icon.png" />
+                    <span className="fw-bolder">Untitled Ui</span>
                 </div>
                 <p>© 2077 Untitled UI. All rights reserved.</p>
             </div>
