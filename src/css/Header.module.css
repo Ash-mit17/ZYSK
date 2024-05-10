@@ -111,5 +111,7 @@
   }
   .imgBox {
     width: 343px;
+    border: 8px solid black;
+    border-radius: 12px;
   }
 }
