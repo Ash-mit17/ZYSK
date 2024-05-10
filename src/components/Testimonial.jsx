@@ -10,7 +10,7 @@ export default function Testimonial() {
         </p>
         <img alt='avatar' src='/avatar.png' />
         <div className='text-center'>
-            <p>Candice Wu</p>
+            <p className='fw-bold'>Candice Wu</p>
             <p>Product Manager, Sisyphus</p>
         </div>
     </div>

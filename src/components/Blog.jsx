@@ -1,5 +1,7 @@
 import styles from '../css/Blog.module.css'
+import useWindowSize from '../hooks/useWindowSize'
 export default function Blog() {
+    const [windowWidth] = useWindowSize();
     const blog = [
         {
             'img': '/blog/blog (1).png',
@@ -34,7 +36,7 @@ export default function Blog() {
             <div>
                 <div className="d-flex justify-content-between">
                     <p className={styles.txt}>Our Blog</p>
-                    <button className={styles.button}>View all posts</button>
+                    {windowWidth > 500 ? <div className='d-flex justify-content-center'><button className={styles.button}>View all posts</button></div> : null}
                 </div>
                 <p className='fs-2 fw-bold'>
                     Lastest blog posts
@@ -51,8 +53,11 @@ export default function Blog() {
                         </div>
 
                         <p className={styles.txt}>{item.type}</p>
-                        <p className='fw-bold'>{item.title}</p>
-                        <p>{item.content}</p>
+                        <div className='d-flex justify-content-between'>
+                            <p className='fw-bolder'>{item.title}</p>
+                            <img alt='icon' width={24} height={28} src='/wrap.png' />
+                        </div>
+                        <p className='fw-normal'>{item.content}</p>
                         <div className='d-flex justify-content-start'>
                             <div className='d-inline my-1'>
                                 <img src={item.avatar} alt='avatar' />
@@ -65,6 +70,7 @@ export default function Blog() {
                     </div>
                 ))}
             </div>
+            {windowWidth < 500 ? <div className='d-flex justify-content-center'><button className={styles.button}>View all posts</button></div> : null}
         </div>
     )
 }

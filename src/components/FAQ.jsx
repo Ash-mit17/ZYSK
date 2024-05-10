@@ -30,7 +30,7 @@ export default function FAQ() {
         }
     ]
     return (
-        <div className="container">
+        <div className="container py-3">
             <div>
                 <p className={styles.heading}>
                     Frequently asked questions

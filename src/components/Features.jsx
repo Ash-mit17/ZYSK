@@ -39,7 +39,7 @@ export default function Features() {
                 <p className={styles.heading}>Analytics that feels like it’s from the future</p>
                 <p className={styles.supportingText}>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
         </div>
-        <div className='d-flex flex-wrap justify-content-between'>
+        <div className='d-flex py-4 flex-wrap justify-content-between'>
             {features.map((feature) => (
                 <div style={{width: '384px', margin: '0 10px'}} key={feature.content}>
                     <img alt='icon' height={48} width={48} className={styles.icon} src={feature.image} />

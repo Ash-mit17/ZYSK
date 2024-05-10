@@ -4,7 +4,7 @@ export default function Header() {
         <div className={styles.headerBox}>
             <div>
                 <div>
-                    <div>
+                    <div className='py-2'>
                         <span className={styles.btn}><span className={styles.btn1}>New feature</span>Checkout the team dashboard<img className='pb-1' height={16} width={16} src='/arrow-right.png' /></span>
                     </div>
                     <div>
@@ -15,7 +15,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div className='py-3'>
                         <button type='button' className={styles.button1}><img height={24} width={24} className='px-1 pb-1' src='/play-circle.png' />Demo</button>
                         <button type='button' className={styles.button2}>Sign up</button>
                     </div>
