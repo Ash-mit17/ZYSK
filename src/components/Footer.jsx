@@ -16,16 +16,34 @@ export default function Footer() {
         {
             'title' : 'Resources',
             't1' : 'Blog',
-            't2' : 'Newsletters',
+            't2' : 'News',
             't3' : 'Events',
+        },
+        {
+            'title' : 'Use cases',
+            't1' : 'Startups',
+            't2' : 'Enterprise',
+            't3' : 'Government',
+        },
+        {
+            'title' : 'Social',
+            't1' : 'Twitter',
+            't2' : 'LinkedIn',
+            't3' : 'Github',
+        },
+        {
+            'title' : 'Legal',
+            't1' : 'Terms',
+            't2' : 'Privacy',
+            't3' : 'Cookies',
         },
     ]
   return (
     <div className='container'>
         <footer>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex flex-wrap justify-content-between">
                 {items.map((item) => (
-                    <div className="mx-2" key={item.title}>
+                    <div className="mx-4 " key={item.title}>
                         <p style={{color : '#667085'}}>{item.title}</p>
                         <p style={{fontWeight : '600'}}>{item.t1}</p>
                         <p style={{fontWeight : '600'}}>{item.t2}</p>

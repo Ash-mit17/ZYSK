@@ -1,7 +1,7 @@
 import styles from '../css/CTA.module.css'
 export default function CTA() {
   return (
-    <div className='container'>
+    <div className='py-4'>
         <div className={styles.box}>
             <p className={styles.heading}>Start your free trial</p>
             <p className={styles.content}>Join over 4,000+ startups already growing with Untitled.</p>

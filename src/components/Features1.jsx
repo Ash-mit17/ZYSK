@@ -28,14 +28,16 @@ export default function Features1() {
                     Cutting-edge features for advanced analytics
                 </p>
                 <div className='d-flex flex-wrap justify-content-center text-center'>
-                    <p style={{maxWidth: '760px'}}>
+                    <p style={{ maxWidth: '760px' }}>
                         Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
                     </p>
                 </div>
             </div>
             <div>
-                <div className={styles.imgContainer}>
-                    <img className={styles.img} alt='banner' src={windowWidth > 500 ? 'container.png' : 'container1.png'} />
+                <div className={styles1.imgBox}>
+                    <div className={styles1.imgContainer}>
+                        <img className={styles1.img} alt='banner' src={windowWidth > 500 ? 'container.png' : 'container1.png'}/>
+                    </div>
                 </div>
                 <div className='d-flex flex-wrap justify-content-between mt-5'>
                     {features.map((feature) => (
@@ -43,6 +45,7 @@ export default function Features1() {
                             <img alt='icon' height={48} width={48} className={styles1.icon} src={feature.image} />
                             <p className={styles1.title}>{feature.title}</p>
                             <p className={styles1.content}>{feature.content}</p>
+                            <p style={{ color: '#6941C6', fontWeight: '600' }}>Learn more <img alt='right' src='/arrow-right.png'></img></p>
                         </div>
                     ))}
                 </div>

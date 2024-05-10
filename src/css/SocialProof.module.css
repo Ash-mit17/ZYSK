@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: Fill (1216px);
     height: 48px;
 }
 
@@ -12,4 +12,5 @@
     font-size: 16px;
     line-height: 24px;
     color: #101828;
+    padding-right: 5px;
 }

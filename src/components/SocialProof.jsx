@@ -28,7 +28,7 @@ export default function SocialProof() {
   ]
   return (
     <div style={{height: '296px'}}>
-      <div className='py-5 fw-bold'>
+      <div className='py-5 fw-normal'>
         Join 4,000+ companies already growing
       </div>
       <div className="d-flex flex-wrap justify-content-center">
@@ -36,7 +36,7 @@ export default function SocialProof() {
           (
             <div className={styles.box} key={index}>
                 <img src={icon.image} alt={icon.name} />
-                <p className='m-1'>{icon.name}</p>
+                <p className='m-1 fs-4 px-2 fw-bolder'>{icon.name}</p>
             </div>
           )
         ))}

@@ -2,10 +2,10 @@ import styles from '../css/Header.module.css'
 export default function Header() {
     return (
         <div className={styles.headerBox}>
-            <div>
+            <div className={styles.box}>
                 <div>
                     <div className='py-2'>
-                        <span className={styles.btn}><span className={styles.btn1}>New feature</span>Checkout the team dashboard<img className='pb-1' height={16} width={16} src='/arrow-right.png' /></span>
+                        <span className={styles.btn}><span className={styles.btn1}>New feature</span>Checkout the team dashboard<img className='py-1' height={18} width={18} src='/arrow-right.png' /></span>
                     </div>
                     <div>
                         <p className={styles.headingText}>Beautiful analytics to grow smarter</p>
@@ -21,7 +21,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div style={{ margin: '32px 0', border: '8px solid black', borderRadius: '12px' }}>
+            <div className={styles.imgBox}>
                 <div className={styles.imgContainer}>
                     <img className={styles.img} alt='banner' src="/screenmockup.png" />
                 </div>

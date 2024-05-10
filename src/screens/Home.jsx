@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="container text-center">
+      <div className="text-center">
         <Header />
         <SocialProof />
         <Features />
